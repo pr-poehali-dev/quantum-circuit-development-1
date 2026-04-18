@@ -1,10 +1,11 @@
 import { useRef } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
+import { Link } from "react-router-dom"
 
 const images = [
-  "/minimal-architecture-portfolio-with-clean-lines.jpg",
-  "/fashion-photography-editorial-black-and-white.jpg",
-  "/modern-ui-design-portfolio-mockup.jpg",
+  "https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/files/b2156541-5d17-4740-aaca-4cce489601ed.jpg",
+  "https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/files/034640d7-fc46-4d66-920a-45e8ac4e1961.jpg",
+  "https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/files/1aeba312-aa9b-47e4-9350-b14f991b88be.jpg",
 ]
 
 export function HeroSection() {
@@ -26,7 +27,6 @@ export function HeroSection() {
       ref={containerRef}
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background px-6 py-24"
     >
-      {/* Stacked images */}
       <div className="relative flex items-center justify-center">
         <motion.div
           className="absolute w-[280px] md:w-[320px] aspect-[3/4] rounded-xl overflow-hidden shadow-2xl"
@@ -35,11 +35,7 @@ export function HeroSection() {
           animate={{ clipPath: "inset(0 0 0 0)" }}
           transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
         >
-          <img
-            src={images[0] || "/placeholder.svg"}
-            alt="Портфолио 1"
-            className="w-full h-full object-cover"
-          />
+          <img src={images[0]} alt="Адастра на сцене" className="w-full h-full object-cover" />
         </motion.div>
 
         <motion.div
@@ -49,11 +45,7 @@ export function HeroSection() {
           animate={{ clipPath: "inset(0 0 0 0)" }}
           transition={{ duration: 1, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
         >
-          <img
-            src={images[1] || "/placeholder.svg"}
-            alt="Портфолио 2"
-            className="w-full h-full object-cover"
-          />
+          <img src={images[1]} alt="Репетиция ансамбля" className="w-full h-full object-cover" />
         </motion.div>
 
         <motion.div
@@ -63,23 +55,32 @@ export function HeroSection() {
           animate={{ clipPath: "inset(0 0 0 0)" }}
           transition={{ duration: 1, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
         >
-          <img
-            src={images[2] || "/placeholder.svg"}
-            alt="Портфолио 3"
-            className="w-full h-full object-cover"
-          />
+          <img src={images[2]} alt="Выступление ансамбля" className="w-full h-full object-cover" />
         </motion.div>
       </div>
 
       <motion.div
-        className="absolute inset-0 flex items-center justify-center pointer-events-none z-10"
+        className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none z-10 gap-6"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.8 }}
       >
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-center text-foreground mix-blend-difference">
-          Ваши работы, <em className="italic">в фокусе</em>.
+          Ансамбль <em className="italic">Адастра</em>.
         </h1>
+        <motion.div
+          className="pointer-events-auto"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.2 }}
+        >
+          <Link
+            to="/about"
+            className="inline-block bg-foreground text-background px-8 py-3 rounded-full text-sm font-medium hover:bg-foreground/80 transition-colors mix-blend-normal"
+          >
+            Узнать об ансамбле
+          </Link>
+        </motion.div>
       </motion.div>
 
       <motion.div

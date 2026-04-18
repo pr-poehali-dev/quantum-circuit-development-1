@@ -2,27 +2,32 @@ import type React from "react"
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { ArrowRight } from "lucide-react"
+import { Link } from "react-router-dom"
 
-const articles = [
+const achievements = [
   {
-    title: "Искусство визуального сторителлинга",
-    category: "Дизайн",
-    image: "/visual-storytelling-design-article.jpg",
+    title: "Лауреат краевых и всероссийских конкурсов",
+    category: "Достижения",
+    image: "https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/files/b2156541-5d17-4740-aaca-4cce489601ed.jpg",
+    href: "/achievements",
   },
   {
-    title: "Как создать личный бренд онлайн",
-    category: "Стратегия",
-    image: "/personal-branding-digital-marketing.jpg",
+    title: "Хранители русских народных традиций",
+    category: "Миссия",
+    image: "https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/files/bb888808-475c-474f-95cc-5c5338c18ce4.jpg",
+    href: "/about",
   },
   {
-    title: "Тренды типографики 2025",
-    category: "Типографика",
-    image: "/typography-trends-modern-fonts.jpg",
+    title: "Более 20 хореографических постановок",
+    category: "Репертуар",
+    image: "https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/files/1aeba312-aa9b-47e4-9350-b14f991b88be.jpg",
+    href: "/repertoire",
   },
   {
-    title: "Минимализм в дизайне портфолио",
-    category: "Вдохновение",
-    image: "/placeholder.svg?height=200&width=300",
+    title: "Активная творческая молодёжь СибГУ",
+    category: "Команда",
+    image: "https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/files/034640d7-fc46-4d66-920a-45e8ac4e1961.jpg",
+    href: "/about",
   },
 ]
 
@@ -43,36 +48,39 @@ export function InsightsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Статьи
+          Факты об ансамбле
         </motion.p>
 
         <div className="divide-y divide-border">
-          {articles.map((article, i) => (
-            <motion.a
-              key={i}
-              href="#"
-              className="group flex items-center justify-between py-6 relative"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              onMouseEnter={() => setHoveredIndex(i)}
-              onMouseLeave={() => setHoveredIndex(null)}
-              whileHover={{ paddingLeft: 16, paddingRight: 16 }}
-              data-clickable
-            >
-              <div className="flex-1">
-                <span className="text-xs text-muted-foreground uppercase tracking-wider">{article.category}</span>
-                <h3 className="font-serif text-xl md:text-2xl text-foreground mt-1 group-hover:text-primary transition-colors">
-                  {article.title}
-                </h3>
-              </div>
-              <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" />
-            </motion.a>
+          {achievements.map((item, i) => (
+            <motion.div key={i}>
+              <Link
+                to={item.href}
+                className="group flex items-center justify-between py-6 relative"
+                onMouseEnter={() => setHoveredIndex(i)}
+                onMouseLeave={() => setHoveredIndex(null)}
+              >
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.1 }}
+                  whileHover={{ paddingLeft: 16 }}
+                  className="flex items-center justify-between w-full"
+                >
+                  <div className="flex-1">
+                    <span className="text-xs text-muted-foreground uppercase tracking-wider">{item.category}</span>
+                    <h3 className="font-serif text-xl md:text-2xl text-foreground mt-1 group-hover:text-primary transition-colors">
+                      {item.title}
+                    </h3>
+                  </div>
+                  <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" />
+                </motion.div>
+              </Link>
+            </motion.div>
           ))}
         </div>
 
-        {/* Floating hover image */}
         <AnimatePresence>
           {hoveredIndex !== null && (
             <motion.div
@@ -88,8 +96,8 @@ export function InsightsSection() {
               transition={{ duration: 0.2 }}
             >
               <img
-                src={articles[hoveredIndex].image || "/placeholder.svg"}
-                alt={articles[hoveredIndex].title}
+                src={achievements[hoveredIndex].image}
+                alt={achievements[hoveredIndex].title}
                 className="w-full h-auto"
               />
             </motion.div>

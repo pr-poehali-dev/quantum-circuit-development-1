@@ -2,9 +2,9 @@ import { useRef } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
 
 const showcaseImages = [
-  "/modern-architecture-building-exterior-minimal.jpg",
-  "/fashion-model-editorial-portrait-dramatic-lighting.jpg",
-  "/interior-design-minimalist-living-room-natural-lig.jpg",
+  "https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/files/3936eb04-95ed-446f-a221-74c9848e6c15.jpg",
+  "https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/files/bb888808-475c-474f-95cc-5c5338c18ce4.jpg",
+  "https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/files/1bebee50-8b7c-40f1-a684-e40104f8e00c.jpg",
 ]
 
 export function ShowcaseSection() {
@@ -29,7 +29,7 @@ export function ShowcaseSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Галерея
+          Фотогалерея
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
@@ -46,11 +46,10 @@ export function ShowcaseSection() {
                 delay: i * 0.15,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              data-clickable
             >
               <motion.img
                 src={src}
-                alt={`Изображение ${i + 1}`}
+                alt={`Выступление Адастра ${i + 1}`}
                 className="w-full h-full object-cover"
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
