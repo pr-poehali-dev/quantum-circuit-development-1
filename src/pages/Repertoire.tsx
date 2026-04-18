@@ -8,25 +8,25 @@ const genres = [
   {
     name: "Модерн",
     description: "Современная хореография, выражающая внутренний мир через свободу движений. Постановки модерн раскрывают актуальные темы и чувства через язык тела.",
-    image: "https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/files/3936eb04-95ed-446f-a221-74c9848e6c15.jpg",
+    image: "https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/bucket/54357338-18f4-499b-9d28-78425d3f457b.jpg",
     count: "7 постановок",
   },
   {
     name: "Степ",
     description: "Ритмичный танец, где звук стопы становится инструментом. Степ-номера ансамбля «Адастра» — это точность, энергия и неповторимый драйв.",
-    image: "https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/files/1bebee50-8b7c-40f1-a684-e40104f8e00c.jpg",
+    image: "https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/bucket/36a3467f-687c-4f31-8cba-20a0913b3015.jpg",
     count: "5 постановок",
   },
   {
     name: "Фольклор",
     description: "Хореография, пронизанная идеей сохранения русских традиций. Народные постановки передают культурное наследие через движение и костюм.",
-    image: "https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/files/bb888808-475c-474f-95cc-5c5338c18ce4.jpg",
+    image: "https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/bucket/cffb467d-4e33-48e0-aa27-dd9cf922934b.jpg",
     count: "6 постановок",
   },
   {
     name: "Джаз",
     description: "Импровизация, свинг и экспрессия. Джазовые номера — это сочетание американских традиций с уникальным характером ансамбля «Адастра».",
-    image: "https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/files/1aeba312-aa9b-47e4-9350-b14f991b88be.jpg",
+    image: "https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/bucket/8785a5e7-d8f0-46ff-9306-ec3d74e3a951.jpg",
     count: "4 постановки",
   },
 ]

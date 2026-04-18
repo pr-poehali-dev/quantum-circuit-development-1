@@ -93,7 +93,7 @@ export default function Achievements() {
               transition={{ duration: 1.2, delay: 0.3 }}
             >
               <img
-                src="https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/files/b2156541-5d17-4740-aaca-4cce489601ed.jpg"
+                src="https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/bucket/8785a5e7-d8f0-46ff-9306-ec3d74e3a951.jpg"
                 alt="Ансамбль Адастра на сцене"
                 className="w-full h-full object-cover"
               />
@@ -147,12 +147,12 @@ export default function Achievements() {
             </motion.p>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {[
-                "https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/files/034640d7-fc46-4d66-920a-45e8ac4e1961.jpg",
-                "https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/files/1aeba312-aa9b-47e4-9350-b14f991b88be.jpg",
-                "https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/files/3936eb04-95ed-446f-a221-74c9848e6c15.jpg",
-                "https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/files/bb888808-475c-474f-95cc-5c5338c18ce4.jpg",
-                "https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/files/1bebee50-8b7c-40f1-a684-e40104f8e00c.jpg",
-                "https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/files/b2156541-5d17-4740-aaca-4cce489601ed.jpg",
+                "https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/bucket/36a3467f-687c-4f31-8cba-20a0913b3015.jpg",
+                "https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/bucket/54357338-18f4-499b-9d28-78425d3f457b.jpg",
+                "https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/bucket/8785a5e7-d8f0-46ff-9306-ec3d74e3a951.jpg",
+                "https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/bucket/cffb467d-4e33-48e0-aa27-dd9cf922934b.jpg",
+                "https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/bucket/9fcab538-ed90-4eab-b32e-232ba76eadaa.jpg",
+                "https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/bucket/36a3467f-687c-4f31-8cba-20a0913b3015.jpg",
               ].map((src, i) => (
                 <motion.div
                   key={i}

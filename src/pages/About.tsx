@@ -89,7 +89,7 @@ export default function About() {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <img
-                src="https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/files/b2156541-5d17-4740-aaca-4cce489601ed.jpg"
+                src="https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/bucket/36a3467f-687c-4f31-8cba-20a0913b3015.jpg"
                 alt="Выступление ансамбля Адастра"
                 className="w-full h-full object-cover"
               />
@@ -146,7 +146,7 @@ export default function About() {
                 transition={{ duration: 1 }}
               >
                 <img
-                  src="https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/files/034640d7-fc46-4d66-920a-45e8ac4e1961.jpg"
+                  src="https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/bucket/cffb467d-4e33-48e0-aa27-dd9cf922934b.jpg"
                   alt="Репетиция ансамбля"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 />
@@ -159,7 +159,7 @@ export default function About() {
                 transition={{ duration: 1, delay: 0.2 }}
               >
                 <img
-                  src="https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/files/bb888808-475c-474f-95cc-5c5338c18ce4.jpg"
+                  src="https://cdn.poehali.dev/projects/4c922868-2b49-4ad5-a704-63ac721c5f04/bucket/8785a5e7-d8f0-46ff-9306-ec3d74e3a951.jpg"
                   alt="Ансамбль на фестивале"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 />
